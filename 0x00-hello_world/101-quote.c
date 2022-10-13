@@ -1,9 +1,9 @@
 #include <studio.h>
 #include <unistd.h>
 /**
- *main-program entry point.
+ * main - Entry
  *
- *Return: 1
+ * Return: 1
  */
 int main(void)
 {
