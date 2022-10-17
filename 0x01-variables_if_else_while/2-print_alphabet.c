@@ -1,39 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 /**
- * main-program entry point.
- * Return:0 success, non zero fail.
- */
+ *main-program entry point.
+ *Return:0 if no error, non zero if error.
+ **/
 int main(void)
 {
-	int m, i, j;
+	char i;
 
-	for (i = '0'; i <= '9'; i++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		for (j = '0'; j <= '9'; j++)
-		{
-			for (m = '0'; m <= '9'; m++)
-			{
-				if (i < j && j < m)
-				{
-					putchar(i);
-					putchar(j);
-					putchar(m);
-					if (i == '7' && j == '8' && m == '9')
-					{
-						break;
-					}
-					else
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-			}
-		}
+		putchar(i);
 	}
-	putchar ('\n');
+	putchar('\n');
 	return (0);
 }
